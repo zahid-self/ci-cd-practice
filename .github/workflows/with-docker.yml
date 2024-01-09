@@ -5,7 +5,7 @@ on: push
 
 jobs: 
   build: 
-    runs-on: debian
+    runs-on: linux/arm64
     steps:
       - uses: actions/checkout@v4
       - name: Build
