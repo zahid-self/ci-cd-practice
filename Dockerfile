@@ -32,3 +32,5 @@ RUN npm install
 
 ENTRYPOINT ["dumb-init", "-c", "--"]
 
+CMD yarn test:mocha
+
