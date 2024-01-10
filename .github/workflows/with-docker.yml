@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build
-        run: npm install yarn
+        run: docker build . --platform=linux/amd64 -t learn-ci-cd
       - name: Run
-        run: yarn --version
+        run: docker run -it --init learn-ci-cd
